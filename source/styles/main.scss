@@ -1,0 +1,27 @@
+@use 'var';
+
+.container {
+    max-width: 90%;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var.$mainColor;
+
+    header {
+        color: var.$textColor;
+    }
+
+    &:hover {
+        p {
+            display: block;
+            color: var.$textColor;
+            font-size: 500%;
+        }
+
+        background-color: var.$success;
+    }
+}
+
+p {
+    display: none;
+}
